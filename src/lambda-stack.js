@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.LambdaStack = void 0;
+const cdk = require("@aws-cdk/core");
+const aws_lambda_nodejs_esbuild_1 = require("aws-lambda-nodejs-esbuild");
+class LambdaStack extends cdk.Stack {
+    constructor(scope, id, props) {
+        super(scope, id, props);
+        new aws_lambda_nodejs_esbuild_1.NodejsFunction(this, 'miniFunction', { handler: 'handlers/TestHandler.handler' });
+    }
+}
+exports.LambdaStack = LambdaStack;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibGFtYmRhLXN0YWNrLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsibGFtYmRhLXN0YWNrLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7OztBQUFBLHFDQUFxQztBQUNyQyx5RUFBeUQ7QUFFekQsTUFBYSxXQUFZLFNBQVEsR0FBRyxDQUFDLEtBQUs7SUFDdEMsWUFBWSxLQUFvQixFQUFFLEVBQVUsRUFBRSxLQUFzQjtRQUNoRSxLQUFLLENBQUMsS0FBSyxFQUFFLEVBQUUsRUFBRSxLQUFLLENBQUMsQ0FBQztRQUN4QixJQUFJLDBDQUFjLENBQUMsSUFBSSxFQUFFLGNBQWMsRUFBRSxFQUFFLE9BQU8sRUFBRSw4QkFBOEIsRUFBQyxDQUFDLENBQUM7SUFDekYsQ0FBQztDQUNKO0FBTEQsa0NBS0MiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyBjZGsgZnJvbSAnQGF3cy1jZGsvY29yZSc7XG5pbXBvcnQge05vZGVqc0Z1bmN0aW9ufSBmcm9tIFwiYXdzLWxhbWJkYS1ub2RlanMtZXNidWlsZFwiO1xuXG5leHBvcnQgY2xhc3MgTGFtYmRhU3RhY2sgZXh0ZW5kcyBjZGsuU3RhY2sge1xuICAgIGNvbnN0cnVjdG9yKHNjb3BlOiBjZGsuQ29uc3RydWN0LCBpZDogc3RyaW5nLCBwcm9wcz86IGNkay5TdGFja1Byb3BzKSB7XG4gICAgICAgIHN1cGVyKHNjb3BlLCBpZCwgcHJvcHMpO1xuICAgICAgICBuZXcgTm9kZWpzRnVuY3Rpb24odGhpcywgJ21pbmlGdW5jdGlvbicsIHsgaGFuZGxlcjogJ2hhbmRsZXJzL1Rlc3RIYW5kbGVyLmhhbmRsZXInfSk7XG4gICAgfVxufVxuIl19

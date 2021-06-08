@@ -1,0 +1,24 @@
+{
+  "name": "lambda-mini",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TakahiroIshii/lambda-mini.git",
+  "author": "Takahiro Ishii <itkh@amazon.com>",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-lambda": "^1.107.0",
+    "@aws-cdk/core": "^1.107.0",
+    "@types/aws-lambda": "^8.10.77",
+    "@types/node": "^15.12.2",
+    "aws-cdk": "^1.107.0",
+    "aws-lambda": "^1.0.6",
+    "aws-lambda-nodejs-esbuild": "^1.1.5",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "aigle": "^1.14.1"
+  }
+}

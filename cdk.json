@@ -1,0 +1,4 @@
+{
+  "app": "npx ts-node --prefer-ts-exts src/lambda-mini.ts",
+  "versionReporting": false
+}
