@@ -8,8 +8,7 @@ export const handler = async (
         console.log('hello');
     })
     return {
-        statusCode: 201,
-        headers: event.headers as any,
+        statusCode: 200,
         body: JSON.stringify({
             method: event.httpMethod,
             query: event.queryStringParameters,
